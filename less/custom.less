@@ -1,58 +1,189 @@
 // MIEJSCE NA CZCIONKE
 
 
+.navbar{
+	background: none!important;
+	border: none;
+	margin-top: -30px;
+	 border: none!important;
+	
+
+		.navbar-nav {
+			  display: inline-block;
+			  float: none;
+			  vertical-align: top;
+			  
+
+			  
+		}
+		.navbar-collapse {
+			  text-align: center;
+			  font-size: 1.4em;
+			  font-family: 'Open Sans';
+
+ 
+			 
+			  	li{
+			  			padding-left: 40px;
+
+					  		a{
+					  			color: white!important;
+					  			
+					  			&:hover{
+					  				text-decoration: underline;
+					  				cursor: default;
+					  				
+					  			}
+					  		}
+			  	}
+  	
+
+
+}
+}
+
+
+
 .jumbotron{
 	
 	 color: #fff;
-	background-image: url('http://dummyimage.com/1280x720/7c7c7d/ffffff&text=Simple+Image');
+	// background-image: url('http://dummyimage.com/1280x720/7c7c7d/ffffff&text=Simple+Image');
+	background-image: url('../images/photo-phone.jpg');
 	background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
 	background-size:  cover;
 	height: 100vh;
     width: 100%;
-	
-	}
+		    span{
+			text-decoration: underline;
+				}
+
+    
+}
+
+	.header-content{
+	color: white;
+	margin-top: 12%;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+
+			.glyphicon{
+				font-size: 2em;
+				color: white!important;
+			}
+			
+		}
 
 #me{
-    
+    background-color: #ddf1e8;
+    margin-top:  -50px;
    }
+
+ #service{
+ 	background-color: darken(#F6FAFB, 4%);
+
+ }
 #technology{
-	
+	background-color: #edece8;
 }
 
 #works{
 	
-	background-color: green;
+	
 }
 
 #end{
 	height: 200px;
 	background-color: black;
 }
-.tab-big{
-	height: 60vh;
-	border: 2px solid green;
 
-}
-
-.tab-small{
-	border: 2px solid blue;
-	height: 30vh;
+#contact{
 	
-}
-
-.tab-smallest{
-
-	border: 2px solid blue;
-	height: 15vh;
+	// background-image: url("keyboard-orange.jpg");
+	// background-image: url('http://dummyimage.com/1280x720/7c7c7d/ffffff&text=Simple+Image');
+	background-image: url('../images/desk-worker.jpg');
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-size:  cover;
+	height: 100vh;
 	width: 100%;
-
 }
-.circle{
-	width: 150px;
-	height: 150px;
-	background-color: grey;
-	display: inline-block;
-	padding: 10px;
+
+
+.serv{
+
+	color: lighten(black, 40%);
+	font-family: Lato, sans-serif;
+			.glyphicon{
+				font-size: 5em!important;
+				color: #8CB0BE;
+				transition: all 2s;
+				&:hover{
+					
+						font-size: 7em!important;
+				}
+				&:active{
+					font-family: 3.5em!important;
+				}
+			}
+}
+
+.headers{
+	font-family: Lato, sans-serif;
+	padding-bottom: 85px;
+	margin-top: 0px;
+	padding-top: 35px;
+	font-size: 40px;
+	color: #fc9b7a;
+		small{
+			font-style: italic;
+		}
+
+	}
+
+.col-info{
+	
+	
+	font-family: Lato, sans-serif;
+	h2 { width:100%; 
+		text-align:center; 
+		border-bottom: 1px solid #000; 
+		line-height:0.1em; 
+		margin:10px 0 20px; 
+		span { 
+			background:#ddf1e8;   
+			padding:0 10px; 
+		}
+	} 
+}
+
+.col-photo{
+	border-left: 1px dotted black;
+}
+
+.col-tech{
+	ul{
+		list-style-type: circle;
+			li{
+				font-family: Lato, sans-serif;
+				color: lighten(black, 45%)!important;
+				padding-bottom: 30px;
+				font-size: 1.9em;
+			}
+	}
+}
+.col-work1{
+	background-color: #546d5a!important;
+}
+
+.col-work2{
+	background-color: #d3b9aa!important;
+}
+.row-eq-height{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }

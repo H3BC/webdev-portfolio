@@ -11,7 +11,9 @@
     <meta name="description" content="Portfolio. Mlody programista i webdeveloper.">
     <meta name="keywords" content="html, css, javascript, jquery, bootstrap, less, portfolio, webdev, rwd">
     <link rel="shortcut icon" href="images/icon.png"> 
-    <link href="css/my_style.css" rel="stylesheet">  
+    <link href="css/my_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -29,119 +31,154 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span> 
                 </button>
-                <a class="navbar-brand" href="#">My Portfolio</a>
+                <!-- <a class="navbar-brand" href="#">My Portfolio</a> -->
               </div>
-              <div class="collapse navbar-collapse pull-right" id="myNavbar">
+              <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">O mnie</a></li>
-                  <li><a href="#">Technologie</a></li> 
-                  <li><a href="#">Prace</a></li>
-                  <li><a href="#">Kontakt</a></li>  
+                  <li><a href="#me">O mnie</a></li>
+                  <li><a href="#service">Usługi</a></li>
+                  <li><a href="#technology">Technologie</a></li> 
+                  <li><a href="#works">Prace</a></li>
+                  <li><a href="#contact">Kontakt</a></li>  
                 </ul>
                </div>
             </nav>
 
          <div class="header-content">
-           <!-- TU BEDZIE TEKST POWITALNY -->
+          <h1><b>Konstanty Koszewski <br> Frontend Webdeveloper</b><br><h1>
+          <h2><b>W czym mogę <span>Ci</span> pomóc?<b></h2>
+          <p>&nbsp</p>
+
+          <a href="#"><div class="glyphicon glyphicon-chevron-down animated slideInDown infinite"></div><br>
+          <div class="glyphicon glyphicon-chevron-down animated slideInDown infinite"></div></a>
+
+
+         
          </div>
+
      </div> <!-- CONTAINER --> 
   </header>
 
   <section id="me">
-    <h2 class="text-center headers">Kilka słów o mnie</h2>  <!-- HEADERS - KLASA NAGLOWKOW KOLEJNYCH CZESCI STRONY -->
+    <h2 class="text-center headers">Kim jestem <br><small>Kilka słów o mnie</small> </h2>  <!-- HEADERS - KLASA NAGLOWKOW KOLEJNYCH CZESCI STRONY -->
     <div class="container">
       <div class="row">
-            <div class="col-md-6 tab-big">
-           
-            </div>
-            <div class="col-md-6 tab-big">
-              
-            </div>
-   
-            <div class="col-md-6 tab-small">
-              
-            </div>
-            <div class="col-md-2 tab-small">
-              
-            </div>
-            <div class="col-md-2 tab-small">
-              
-            </div>
-            <div class="col-md-2 tab-small">
+        <div class="col-lg-6 col-info">
+            <h2><span>THIS IS A TEST</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse natus similique, sapiente rem maxime quod! Quisquam ab atque nesciunt eos eveniet, sunt distinctio expedita non dolorem necessitatibus accusantium, ipsum deleniti vero. Consequatur dignissimos placeat suscipit, pariatur impedit fugit ratione ipsam, aut animi illo, rem sunt eveniet nam tempora iusto adipisci!</p>
 
-            </div>
-      </div> <!-- ROW -->
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quo earum placeat. Aspernatur consequatur, amet doloribus facilis non tenetur libero sunt ratione tempore maxime delectus earum consequuntur autem soluta totam. Id iure aliquid rem facere quod quas porro sed commodi animi esse dicta unde, omnis fuga! Quibusdam iste ad sapiente animi dolor numquam exercitationem quis perferendis amet odio, error, beatae eos a eius hic alias dolore consectetur iure nisi esse?</p>
+          </div>
+        <div class="col-lg-6 col-photo">
+          <!-- <img src="http://dummyimage.com/650x400/7c7c7d/ffffff&text=Simple+Image" class="img-responsive" alt=""> -->
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+ 
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://dummyimage.com/650x400/7c7c7d/ffffff&text=Simple+Image" alt="Problem z wyświetleniem zdjecia.">
+      <div class="carousel-caption">
+        <h3>TEST HEADER</h3>
+      </div>
+    </div>
+     <div class="item">
+      <img src="http://dummyimage.com/650x400/7c7c7d/ffffff&text=Simple+Image" alt="Problem z wyświetleniem fotografi.">
+      <div class="carousel-caption">
+        <h3>TEST HEADER</h3>
+      </div>
+    </div>
+     <div class="item">
+      <img src="http://dummyimage.com/650x400/7c7c7d/ffffff&text=Simple+Image" alt="Problem z wyświetleniem fotografi.">
+      <div class="carousel-caption">
+        <h3>TEST HEADER</h3>
+      </div>
+    </div>
+
+  </div>
+
+ 
+</div>
+        </div>
+      </div>
+      <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+
     </div> <!-- CONTAINER -->
 
 
   </section>
-  <hr> <!-- TUTAJ POSTAWIC BORDER-BUTTOM 1 PX  -->
+
+
+  <section id="service">
+    <h2 class="text-center headers">Usługi <br> <small> Co mogę dla Ciebie zrobić</small></h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center serv">
+          <div class="glyphicon glyphicon-tasks"></div>
+          <h3>Tworzenie Stron</h3>
+          <p>&nbsp</p>
+          <p>Od projektu po ostateczne poprawki. Kompleksowe wykonanie nowoczesnej i funkcjonalnej strony dla Twojej firmy.</p>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center serv">
+          <div class="glyphicon glyphicon-wrench"></div>
+          <h3>Poprawa Istniejacych</h3>
+          <p>&nbsp</p>
+          <p>Poprawki i uatrakcyjnienie już istniejących stron. Dzięki technologii RWD Twoja strona bedzię wyglądać i działać równie dobrze na komputerze co na urządzeniach mobilnych!</p>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center serv">
+          <div class="glyphicon glyphicon-globe"></div>
+          <h3>Wordpress</h3>
+          <p>&nbsp</p>
+          <p>Od małych poprawek to duże projekty. Dołożę wszelkich starań aby sprostać Twoim oczekiwaniom.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
   
   <section id="technology">
     <div class="row-fluid">
       <div class="col-lg-12"><h2 class="text-center headers">Technologia <br><small>Czyli o tym co umiem</small></h2></div>
     </div>
-      <p>&nbsp</p>
-      <div class="container text-center">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-2"> 
-                <div class="circle">
-                  <a href="#"><img src="images/html-logo.png" alt="" class="img-responsive"></a>
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <div class="circle">
-                  <a href="#"><img src="images/css-logo.png" alt="" class="img-responsive"></a>
-                </div>
-           </div>
-              <div class="col-sm-2 col-sm-offset-4"> 
-                  <div class="circle">
-                    <a href="#"><img src="images/js-logo.png" alt="" class="img-responsive"></a>
-                  </div>
-              </div>
-              <div class="col-sm-2"> 
-                  <div class="circle">
-                    <a href="#"><img src="images/jquery-logo.png" alt="" class="img-responsive"></a>
-                  </div>
-              </div>
-        </div> <!-- ROW -->
-       <p>&nbsp</p>
-       <p>&nbsp</p>
-        <div class="row">
-            <div class="col-sm-2"> 
-                <div class="circle">
-                   <a href="#"><img src="images/bootstrap-logo.jpg" alt="" class="img-responsive"></a>
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <div class="circle">
-                   <a href="#"><img src="images/less-logo.png" alt="" class="img-responsive"></a>
-                </div>
-           </div>
-              <div class="col-sm-2 col-sm-offset-4"> 
-                  <div class="circle">
-                    <a href="#"><img src="images/wordpress-logo.png" alt="" class="img-responsive"></a>
-                  </div>
-              </div>
-              <div class="col-sm-2"> 
-                  <div class="circle">
-                    <a href="#"><img src="images/git-logo.png" alt="" class="img-responsive"></a>
-                  </div>
-              </div>
-        </div> <!-- ROW -->
-      </div> <!-- CONTAINER -->
-    
+          <div class="col-lg-4 col-tech">
+            <ul class="pull-right">
+              <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="top" data-content="<img src='images/html-logo.png' class='img-responsive pull-left'> Hello World " >HTML</span></li>
+              <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="right" data-content="Hello World">CSS</span></li>
+              <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="right" data-content="Hello World">JavaScript</span></li>
+              <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="bottom" data-content="Hello World">jQuery</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-lg-offset-4 col-tech">
+            <ul>
+            <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="top" data-content="Hello World">Less</span></li>
+              <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="left" data-content="Hello World">Bootstrap</span></li>
+              <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="left" data-content="Hello World">WordPress</span></li>
+              <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="bottom" data-content="Hello World">Git</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+
 
   </section>
 
+<section id="works">
+   <div class="row row-eq-height">
 
- <section id="works">
-   <div class="row">
-       <div class="col-lg-6">
-          <h2 class="headers text-center">Moje projekty stron:</h2>
+       <div class="col-xs-6 col-work1">
+          <h2 class="headers header-content text-center" style="padding-top: 25%;">Moje projekty stron:</h2>
        </div>
-    <div class="col-lg-6" style="background-color: orange;">
+    <div class="col-xs-6 col-work2">
          <div class = "thumbnail" style="width: 35%; margin: auto;">
             <a href="#"><img src = "http://dummyimage.com/240x180/7c7c7d/ffffff&text=Simple+Image" alt = "Generic placeholder thumbnail"></a>
          <caption>
@@ -165,34 +202,9 @@
  </section>
 
  <section id="contact">
-  
-     <div class="row">
-       <div class="col-lg-4 col-lg-offset-4">
-          <h3 class="headers">Napisz do mnie</h3>
-      <form action="#">
-        <fieldset class="form-group">
-          <label class="label-control" for="#mail">Email:</label>
-          <input type="email" id="mail" class="form-control">
-        </fieldset>
-        <fieldset class="form-group">
-          <label class="label-control" for="#post">Temat:</label>
-          <input type="text" id="post" class="form-control">
-        </fieldset>
-        <fieldset class="form-group">
-          <textarea rows="10" cols="60" placeholder="Treść wiadomości"></textarea>
-        </fieldset>
-        <div class="text-center">
-            <input type="submit" class="btn btn-primary btn-lg " value="Wyślij wiadomość">
-        </div>
-      </form>
-       </div>
-       <div class="col-lg-4">
-       </div>
-     </div> <!-- ROW -->
-
- 
-
- </section>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio similique culpa mollitia magni quos ullam necessitatibus nostrum, nesciunt deserunt accusantium quam, numquam beatae earum dolores nihil labore fuga iure, architecto facilis sequi ad voluptatum porro. Neque quo vitae praesentium, reprehenderit aliquid excepturi blanditiis tempora quaerat magnam amet ab fuga, laborum voluptate nobis magni. Rem minus sit cumque nihil tenetur corporis quibusdam a nisi aut odit facere, repellendus nobis dignissimos accusantium porro rerum numquam. Fuga ex deleniti at, officia qui aut, cumque ullam nulla quibusdam doloremque facere, assumenda rem repellat fugit, deserunt ipsum sint. Accusamus fugit reiciendis, esse illum aut distinctio voluptatum assumenda. Quo explicabo alias a sapiente totam, deleniti tenetur recusandae rerum nemo culpa dolore nam ipsa optio ratione officiis commodi, consequatur accusamus distinctio. Doloribus voluptates illum saepe autem, dolor in, maxime tempore ipsam inventore, neque perferendis officia. Explicabo iusto assumenda facere modi accusantium porro accusamus fuga eaque unde. Praesentium cupiditate maxime vitae excepturi id, eos nulla dolorem beatae totam non accusamus et laudantium ipsa sed possimus reiciendis explicabo perspiciatis similique facilis. Officiis doloremque labore eaque molestias, facilis laboriosam voluptatibus maxime tenetur soluta quo sapiente perferendis dolorum iusto rerum consectetur saepe nisi, a sint nostrum! Fugit quibusdam velit voluptatum nesciunt culpa natus asperiores, ducimus quam! Fugit tenetur expedita voluptates vitae, accusamus ad, consequuntur provident similique ipsum temporibus dolorum porro? Cumque eum accusantium veniam, perspiciatis assumenda explicabo, hic, quas ex velit est maiores? Et nesciunt voluptatibus, dolorum quos, illo velit ratione magnam maxime necessitatibus aspernatur architecto, numquam libero ad cumque, molestias provident. Perspiciatis facilis alias ipsum consequatur aliquam harum, corporis ut reiciendis possimus sequi enim cupiditate, qui necessitatibus, magni repellendus doloribus at et corrupti! Cumque sint quis hic provident facere. Corporis rerum itaque earum quod voluptates voluptatem illum similique! Repellat at assumenda rem ad totam esse velit molestias nulla dicta, porro.
+     
+  </section>
 
  <footer id="end">
    
