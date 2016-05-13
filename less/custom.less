@@ -4,7 +4,7 @@
 .navbar{
 	background: none!important;
 	border: none;
-	margin-top: -30px;
+	margin-top: -20px;
 	 border: none!important;
 	
 
@@ -20,22 +20,26 @@
 			  text-align: center;
 			  font-size: 1.4em;
 			  font-family: 'Open Sans';
+			  
 
  
-			 
+			 ul{
 			  	li{
 			  			padding-left: 40px;
+			  			text-decoration: none;
 
 					  		a{
+					  			
 					  			color: white!important;
 					  			
 					  			&:hover{
-					  				text-decoration: underline;
+					  				outline: blue solid 4px!important;
 					  				cursor: default;
 					  				
 					  			}
 					  		}
 			  	}
+			  }
   	
 
 
@@ -53,7 +57,7 @@
     background-repeat: no-repeat;
     background-position: center center;
 	background-size:  cover;
-	height: 100vh;
+	height: 103vh;
     width: 100%;
 		    span{
 			text-decoration: underline;
@@ -89,31 +93,41 @@
 }
 
 #works{
-	
+	background-color: #546d5a;
 	
 }
 
 #end{
-	height: 200px;
-	background-color: black;
+	font-family: Lato, sans-serif;
+	color: white;
+	background-color: #8CB0BE;
+	padding: 20px 0 20px 0;
 }
 
 #contact{
 	
+	background-color: #f6fafb;
+	margin-top: -10px;
+}
+
+#break{
 	// background-image: url("keyboard-orange.jpg");
 	// background-image: url('http://dummyimage.com/1280x720/7c7c7d/ffffff&text=Simple+Image');
-	background-image: url('../images/desk-worker.jpg');
+	.headers{
+		background-image: url('../images/desk-worker.jpg');
 	background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
 	background-size:  cover;
-	height: 100vh;
+	height: auto;
 	width: 100%;
+
+	}
+
 }
 
-
 .serv{
-
+    opacity: 0;
 	color: lighten(black, 40%);
 	font-family: Lato, sans-serif;
 			.glyphicon{
@@ -145,7 +159,7 @@
 
 .col-info{
 	
-	
+	opacity: 0;
 	font-family: Lato, sans-serif;
 	h2 { width:100%; 
 		text-align:center; 
@@ -161,12 +175,16 @@
 
 .col-photo{
 	border-left: 1px dotted black;
+	img{
+		opacity: 0;
+	}
 }
 
 .col-tech{
 	ul{
 		list-style-type: circle;
 			li{
+				opacity: 0;
 				font-family: Lato, sans-serif;
 				color: lighten(black, 45%)!important;
 				padding-bottom: 30px;
@@ -175,7 +193,7 @@
 	}
 }
 .col-work1{
-	background-color: #546d5a!important;
+	
 }
 
 .col-work2{
@@ -186,4 +204,33 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+form{
+	padding-top: 35px;
+	margin-bottom: 40px;
+	background-color: #eeebdc;
+	border: 2px solid darken(#eeebdc, 15%);
+	border-radius: 3%;
+	
+}
+.thumbnail{
+	width: 90%;
+	opacity: 0;
+	margin-top: 15%!important;
+	margin-bottom: 15%!important;
+	}
+
+.arrow{
+	
+	// border: 1px solid black;
+	// background: rgba(204, 204, 204, 0.5);
+	z-index: 100;
+	text-align: right!important;
+	margin-left: 95%;
+	position: fixed;
+
+	.glyphicon{
+
+		font-size: 40px;
+	}
 }

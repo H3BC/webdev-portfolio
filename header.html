@@ -22,7 +22,7 @@
  </head>
   <body>
 
-  <header class="jumbotron">
+  <header class="jumbotron" id="main">
      <div class="container">
           <nav class="navbar navbar-inverse">
               <div class="navbar-header">
@@ -39,7 +39,7 @@
                   <li><a href="#service">Usługi</a></li>
                   <li><a href="#technology">Technologie</a></li> 
                   <li><a href="#works">Prace</a></li>
-                  <li><a href="#contact">Kontakt</a></li>  
+                  <li><a href="#break">Kontakt</a></li>  
                 </ul>
                </div>
             </nav>
@@ -49,14 +49,15 @@
           <h2><b>W czym mogę <span>Ci</span> pomóc?<b></h2>
           <p>&nbsp</p>
 
-          <a href="#"><div class="glyphicon glyphicon-chevron-down animated slideInDown infinite"></div><br>
+          <a href="#me" id="anim-me"><div class="glyphicon glyphicon-chevron-down animated slideInDown infinite"></div><br>
           <div class="glyphicon glyphicon-chevron-down animated slideInDown infinite"></div></a>
 
-
+            
          
          </div>
 
      </div> <!-- CONTAINER --> 
+    <div class="hidden-xs hidden-sm arrow" id="arrow"> <a href="#main"><div class="glyphicon glyphicon-chevron-up"></div></a></div>
   </header>
 
   <section id="me">
@@ -64,12 +65,13 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-info">
-            <h2><span>THIS IS A TEST</span></h2>
+           <h2><span>THIS IS A TEST</span></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse natus similique, sapiente rem maxime quod! Quisquam ab atque nesciunt eos eveniet, sunt distinctio expedita non dolorem necessitatibus accusantium, ipsum deleniti vero. Consequatur dignissimos placeat suscipit, pariatur impedit fugit ratione ipsam, aut animi illo, rem sunt eveniet nam tempora iusto adipisci!</p>
 
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quo earum placeat. Aspernatur consequatur, amet doloribus facilis non tenetur libero sunt ratione tempore maxime delectus earum consequuntur autem soluta totam. Id iure aliquid rem facere quod quas porro sed commodi animi esse dicta unde, omnis fuga! Quibusdam iste ad sapiente animi dolor numquam exercitationem quis perferendis amet odio, error, beatae eos a eius hic alias dolore consectetur iure nisi esse?</p>
           </div>
         <div class="col-lg-6 col-photo">
+        
           <!-- <img src="http://dummyimage.com/650x400/7c7c7d/ffffff&text=Simple+Image" class="img-responsive" alt=""> -->
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -100,9 +102,10 @@
 
  
 </div>
+        
         </div>
-      </div>
-      <p>&nbsp</p>
+      </div> <!-- ROW -->
+      <p id="anim-service">&nbsp</p>
     <p>&nbsp</p>
     <p>&nbsp</p>
 
@@ -116,7 +119,7 @@
     <h2 class="text-center headers">Usługi <br> <small> Co mogę dla Ciebie zrobić</small></h2>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 ">
           <div class="text-center serv">
           <div class="glyphicon glyphicon-tasks"></div>
           <h3>Tworzenie Stron</h3>
@@ -126,7 +129,7 @@
         </div>
         <div class="col-md-4">
           <div class="text-center serv">
-          <div class="glyphicon glyphicon-wrench"></div>
+          <div class="glyphicon glyphicon-wrench" id="anim-technology"></div>
           <h3>Poprawa Istniejacych</h3>
           <p>&nbsp</p>
           <p>Poprawki i uatrakcyjnienie już istniejących stron. Dzięki technologii RWD Twoja strona bedzię wyglądać i działać równie dobrze na komputerze co na urządzeniach mobilnych!</p>
@@ -162,24 +165,28 @@
             <ul>
             <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="top" data-content="Hello World">Less</span></li>
               <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="left" data-content="Hello World">Bootstrap</span></li>
-              <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="left" data-content="Hello World">WordPress</span></li>
+              <li id="anim-works"><span data-container="body" data-toggle="popover" data-title="Title" data-placement="left" data-content="Hello World">WordPress</span></li>
               <li><span data-container="body" data-toggle="popover" data-title="Title" data-placement="bottom" data-content="Hello World">Git</span></li>
             </ul>
           </div>
-        </div>
-      </div>  
+        </div> <!-- ROW --> 
+         <p>&nbsp</p>
+      </div>  <!-- CONTAINER -->
 
 
   </section>
+
+  
 
 <section id="works">
    <div class="row row-eq-height">
 
-       <div class="col-xs-6 col-work1">
-          <h2 class="headers header-content text-center" style="padding-top: 25%;">Moje projekty stron:</h2>
+       <div class="col-lg-6 col-work1">
+          <h2 class="headers header-content text-center" style="padding-top: 25%; padding-bottom: 25%;  ">Moje projekty stron:</h2>
        </div>
-    <div class="col-xs-6 col-work2">
-         <div class = "thumbnail" style="width: 35%; margin: auto;">
+         <div class="col-lg-6 col-work2">
+         <div class="col-lg-6">
+         <div class = "thumbnail">
             <a href="#"><img src = "http://dummyimage.com/240x180/7c7c7d/ffffff&text=Simple+Image" alt = "Generic placeholder thumbnail"></a>
          <caption>
             <div class="text-center">
@@ -187,8 +194,9 @@
             </div>
          </caption>
       </div>
-        
-       <div class = "thumbnail" style="width: 35%; margin: auto;">
+    </div>
+     <div class="col-lg-6">
+         <div class = "thumbnail">
             <a href="#"><img src = "http://dummyimage.com/240x180/7c7c7d/ffffff&text=Simple+Image" alt = "Generic placeholder thumbnail"></a>
          <caption>
             <div class="text-center">
@@ -196,30 +204,54 @@
             </div>
          </caption>
       </div>
+    </div>
+  </div>
 
-      </div>
+
+
+       
    </div> <!-- ROW -->
  </section>
 
+<sectrion id="break">
+    <h2 class="headers text-center">Kontakt<br><small>Napisz do mnie</small></h2>
+  </sectrion>
+
  <section id="contact">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio similique culpa mollitia magni quos ullam necessitatibus nostrum, nesciunt deserunt accusantium quam, numquam beatae earum dolores nihil labore fuga iure, architecto facilis sequi ad voluptatum porro. Neque quo vitae praesentium, reprehenderit aliquid excepturi blanditiis tempora quaerat magnam amet ab fuga, laborum voluptate nobis magni. Rem minus sit cumque nihil tenetur corporis quibusdam a nisi aut odit facere, repellendus nobis dignissimos accusantium porro rerum numquam. Fuga ex deleniti at, officia qui aut, cumque ullam nulla quibusdam doloremque facere, assumenda rem repellat fugit, deserunt ipsum sint. Accusamus fugit reiciendis, esse illum aut distinctio voluptatum assumenda. Quo explicabo alias a sapiente totam, deleniti tenetur recusandae rerum nemo culpa dolore nam ipsa optio ratione officiis commodi, consequatur accusamus distinctio. Doloribus voluptates illum saepe autem, dolor in, maxime tempore ipsam inventore, neque perferendis officia. Explicabo iusto assumenda facere modi accusantium porro accusamus fuga eaque unde. Praesentium cupiditate maxime vitae excepturi id, eos nulla dolorem beatae totam non accusamus et laudantium ipsa sed possimus reiciendis explicabo perspiciatis similique facilis. Officiis doloremque labore eaque molestias, facilis laboriosam voluptatibus maxime tenetur soluta quo sapiente perferendis dolorum iusto rerum consectetur saepe nisi, a sint nostrum! Fugit quibusdam velit voluptatum nesciunt culpa natus asperiores, ducimus quam! Fugit tenetur expedita voluptates vitae, accusamus ad, consequuntur provident similique ipsum temporibus dolorum porro? Cumque eum accusantium veniam, perspiciatis assumenda explicabo, hic, quas ex velit est maiores? Et nesciunt voluptatibus, dolorum quos, illo velit ratione magnam maxime necessitatibus aspernatur architecto, numquam libero ad cumque, molestias provident. Perspiciatis facilis alias ipsum consequatur aliquam harum, corporis ut reiciendis possimus sequi enim cupiditate, qui necessitatibus, magni repellendus doloribus at et corrupti! Cumque sint quis hic provident facere. Corporis rerum itaque earum quod voluptates voluptatem illum similique! Repellat at assumenda rem ad totam esse velit molestias nulla dicta, porro.
+  <div class="container">
+<div class="row">
+  <br>
+  <div class="col-md-6 col-md-offset-3">
+    <form  role="form">
+      <div class="text-center">
+      <input   type="email" id="email" placeholder="Twój Email:"  class="pull-left form-control"><br><br><br>
+      <input  type="text"  id="topic" placeholder="Temat:" class="pull-right form-control"><br><br><br>
+      <textarea class="form-control" rows="12" placeholder="Treść Wiadomości"></textarea><br><br>
+      <button type="submit" class="btn btn-lg btn-info">Wyślij</button>
+    </div>
+    </form>
+  </div>
+</div>
+</div>
      
   </section>
 
  <footer id="end">
-   
-
+    <div class="text-center">
+      <p>© 2016 Konstanty Koszewski</p>
+     
+    </div> 
+  
  </footer>
 
-
- 
 <!-- javascript files included --> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/functions.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js"></script>
+    <script src="js/functions.js"></script>
+   
  
- 
-
- 
-  </body>
+ </body>
 </html>

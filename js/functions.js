@@ -1,36 +1,61 @@
-$(document).ready(function(){
+  $(document).ready(function(){ 
+// $('.nav').localScroll();
 
-//funkcja aktywujaca okienka popover
-    $('[data-toggle="popover"]').popover({
-    html: true // uzywanie html w okienkach
-    })
+$.localScroll()
 
- // funkcja zamykajaca okienka popover
-$('body').on('click', function (e) {
-    $('[data-toggle="popover"]').each(function () {
-        //the 'is' for buttons that trigger popups
-        //the 'has' for icons within a button that triggers a popup
-        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-            $(this).popover('hide');
-        }
-    });
-});
-
-// aktywacja tabow. pojedynczo dla kazdego na stronie.
-
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-  e.target // newly activated tab
-  e.relatedTarget // previous active tab
-})
-
-// okienka typu tooltip
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+$('.arrow').find('a').hide();
 
 });
 
+var waypoint = new Waypoint({
+  element: document.getElementById('anim-me'),
+  handler: function() {
+    $('.col-info').css({'opacity': '1'});
+    $('.col-photo').find('img').css({'opacity': '1'});
+    $('.col-info').addClass('animated fadeInLeft');
+    $('.col-photo').find('img').addClass('animated fadeInRight');
 
+  }
+})
+
+var waypoint = new Waypoint({
+  element: document.getElementById('anim-service'),
+  handler: function() {
+    $('.serv').css({'opacity': '1'});
+      $('.serv').addClass('animated fadeInDown');
+   
+
+  }
+})
+var waypoint = new Waypoint({
+  element: document.getElementById('anim-technology'),
+  handler: function() {
+    $('.col-tech').find('li').css({'opacity': '1'});
+      $('.col-tech').find('li').addClass('animated fadeInDownBig');
+   
+
+  }
+})
+var waypoint = new Waypoint({
+  element: document.getElementById('anim-works'),
+  handler: function() {
+    $('.thumbnail').find('li').css({'opacity': '1'});
+      $('.thumbnail').addClass('animated fadeInRightBig');
+   
+
+  }
+})
+
+function Scroll(){
+  var distance = window.pageYOffset;
+  if (distance > 558){
+    $('.arrow').find('a').show(500);
+ }
+ else{
+  $('.arrow').find('a').hide(500);
+ }
+}
+
+window.addEventListener('scroll', Scroll);
 
 
