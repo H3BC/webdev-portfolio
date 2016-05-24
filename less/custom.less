@@ -33,7 +33,7 @@
 					  			color: white!important;
 					  			
 					  			&:hover{
-					  				outline: blue solid 4px!important;
+					  				text-decoration: underline!important;
 					  				cursor: default;
 					  				
 					  			}
@@ -52,18 +52,14 @@
 	
 	 color: #fff;
 	// background-image: url('http://dummyimage.com/1280x720/7c7c7d/ffffff&text=Simple+Image');
-	background-image: url('../images/photo-phone.jpg');
+	// background-image: url('../images/photo-phone.jpg');
+	background-image: url('https://images.unsplash.com/photo-1453282716202-de94e528067c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ac9b38e57a8a0724058cdcbe6a687aa8');
 	background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
 	background-size:  cover;
 	height: 103vh;
     width: 100%;
-		    span{
-			text-decoration: underline;
-				}
-
-    
 }
 
 	.header-content{
@@ -80,20 +76,23 @@
 		}
 
 #me{
-    background-color: #ddf1e8;
+    // background-color: #ddf1e8;
+    background-color: darken(#F6FAFB, 15%);
     margin-top:  -50px;
    }
 
  #service{
- 	background-color: darken(#F6FAFB, 4%);
+ 	// background-color: darken(#F6FAFB, 4%);
+ 	background-color: darken(#edece8,5%);
 
  }
 #technology{
-	background-color: #edece8;
+	// background-color: #edece8;
+	background-color: lighten(#c06c84, 30%);
 }
 
 #works{
-	background-color: #546d5a;
+	
 	
 }
 
@@ -101,12 +100,14 @@
 	font-family: Lato, sans-serif;
 	color: white;
 	background-color: #8CB0BE;
+
 	padding: 20px 0 20px 0;
 }
 
 #contact{
 	
-	background-color: #f6fafb;
+	// background-color: #f6fafb;
+	background-color: lighten(#bfb1d5, 15%);
 	margin-top: -10px;
 }
 
@@ -133,7 +134,7 @@
 			.glyphicon{
 				font-size: 5em!important;
 				color: #8CB0BE;
-				transition: all 2s;
+				transition: all 1.5s;
 				&:hover{
 					
 						font-size: 7em!important;
@@ -150,7 +151,7 @@
 	margin-top: 0px;
 	padding-top: 35px;
 	font-size: 40px;
-	color: #fc9b7a;
+	color: darken(#fc9b7a, 10%);
 		small{
 			font-style: italic;
 		}
@@ -167,8 +168,9 @@
 		line-height:0.1em; 
 		margin:10px 0 20px; 
 		span { 
-			background:#ddf1e8;   
-			padding:0 10px; 
+			// background:#ddf1e8;  
+    	background-color: darken(#F6FAFB, 15%);
+    	padding:0 10px; 
 		}
 	} 
 }
@@ -183,6 +185,7 @@
 .col-tech{
 	ul{
 		list-style-type: circle;
+		padding-left: 15px;
 			li{
 				opacity: 0;
 				font-family: Lato, sans-serif;
@@ -193,11 +196,15 @@
 	}
 }
 .col-work1{
+	// background-color: #546d5a;
+	background-color: lighten(#adddcf, 10%);
 	
 }
 
 .col-work2{
-	background-color: #d3b9aa!important;
+	width: 100%;
+	// background-color: #d3b9aa!important;
+	background-color: lighten(#f0e0a2,10%)!important;
 }
 .row-eq-height{
   display: -webkit-box;
@@ -208,7 +215,8 @@
 form{
 	padding-top: 35px;
 	margin-bottom: 40px;
-	background-color: #eeebdc;
+	// background-color: #eeebdc;
+	background-color: #f1ede2;
 	border: 2px solid darken(#eeebdc, 15%);
 	border-radius: 3%;
 	
@@ -234,3 +242,32 @@ form{
 		font-size: 40px;
 	}
 }
+.technology-logos{
+
+	margin-top: -35px;
+	padding-bottom: 50px;
+		ul{
+			text-align: center;
+			text-decoration: none;
+			li{
+				padding-right: 20px;
+				text-decoration: none;
+				display: inline;
+				img{
+					width: 110px;
+					height: 110px;
+					&:hover{
+						-webkit-filter: brightness(120%);
+						filter: brightness(120%);
+						
+						
+					}
+				}
+			}
+		}
+		.bootstrap-logo{
+		img{
+			height: 65px!important;
+		}
+	}
+	}
